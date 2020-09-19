@@ -4,6 +4,10 @@ body {
   overflow-x: hidden;
 }
 
+.readmore {
+  margin-top: 30px;
+}
+
 .nav-header .nav {
   background: green;
 }
