@@ -11,8 +11,8 @@ body {
 .nav-header .nav .container .main-nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80% 20%;
-      grid-template-columns: 80% 20%;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: "menu logo";
@@ -301,8 +301,8 @@ body {
 .main-nav-header .nav .container .main-nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 80% 20%;
-      grid-template-columns: 80% 20%;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: "menu logo";
@@ -971,13 +971,15 @@ body {
   display: none;
 }
 
-.main-signup, .main-contact {
+.main-signup,
+.main-contact {
   background-color: #0099ff;
-  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  background-image: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
   margin: 0;
 }
 
-.main-signup .container, .main-contact .container {
+.main-signup .container,
+.main-contact .container {
   max-width: 85%;
   margin: auto;
   display: -webkit-box;
@@ -994,18 +996,21 @@ body {
       align-content: center;
 }
 
-.main-signup .container .main-sec, .main-contact .container .main-sec {
+.main-signup .container .main-sec,
+.main-contact .container .main-sec {
   position: relative;
   bottom: 70px;
 }
 
-.main-signup .container .main-sec .form, .main-contact .container .main-sec .form {
+.main-signup .container .main-sec .form,
+.main-contact .container .main-sec .form {
   background-color: #f8f8f8;
   padding: 20px 10px;
   border-radius: 7px;
 }
 
-.main-signup .container .main-sec .form form .content, .main-contact .container .main-sec .form form .content {
+.main-signup .container .main-sec .form form .content,
+.main-contact .container .main-sec .form form .content {
   width: 95%;
   margin: auto auto 15px auto !important;
   display: -ms-grid;
@@ -1015,13 +1020,15 @@ body {
   grid-row-gap: 10px;
 }
 
-.main-signup .container .main-sec .form form .content label, .main-contact .container .main-sec .form form .content label {
+.main-signup .container .main-sec .form form .content label,
+.main-contact .container .main-sec .form form .content label {
   color: #000;
   font-size: 22px;
   text-transform: capitalize;
 }
 
-.main-signup .container .main-sec .form form .content input, .main-contact .container .main-sec .form form .content input {
+.main-signup .container .main-sec .form form .content input,
+.main-contact .container .main-sec .form form .content input {
   width: 100% !important;
   padding: 10px;
   border-radius: 5px;
@@ -1029,11 +1036,13 @@ body {
   border: 1px solid #000;
 }
 
-.main-signup .container .main-sec .form form .content, .main-contact .container .main-sec .form form .content {
+.main-signup .container .main-sec .form form .content,
+.main-contact .container .main-sec .form form .content {
   margin: 10px 0 20px 0;
 }
 
-.main-signup .container .main-sec .form form .content select, .main-contact .container .main-sec .form form .content select {
+.main-signup .container .main-sec .form form .content select,
+.main-contact .container .main-sec .form form .content select {
   font-size: 18px;
   text-transform: capitalize;
   line-height: 1.5;
@@ -1042,12 +1051,14 @@ body {
   width: 200px;
 }
 
-.main-signup .container .main-sec .form form .btn, .main-contact .container .main-sec .form form .btn {
+.main-signup .container .main-sec .form form .btn,
+.main-contact .container .main-sec .form form .btn {
   width: 95%;
   margin: auto;
 }
 
-.main-signup .container .main-sec .form form .btn button, .main-contact .container .main-sec .form form .btn button {
+.main-signup .container .main-sec .form form .btn button,
+.main-contact .container .main-sec .form form .btn button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -1059,28 +1070,33 @@ body {
   cursor: pointer;
 }
 
-.main-signup .container .main-sec .form form .btn button:hover, .main-contact .container .main-sec .form form .btn button:hover {
+.main-signup .container .main-sec .form form .btn button:hover,
+.main-contact .container .main-sec .form form .btn button:hover {
   background-color: #829494;
 }
 
-.main-signup .container .main-sec .form form .forgot, .main-contact .container .main-sec .form form .forgot {
+.main-signup .container .main-sec .form form .forgot,
+.main-contact .container .main-sec .form form .forgot {
   width: 95%;
   margin: auto;
 }
 
-.main-signup .container .main-sec .form form .textarea textarea, .main-contact .container .main-sec .form form .textarea textarea {
+.main-signup .container .main-sec .form form .textarea textarea,
+.main-contact .container .main-sec .form form .textarea textarea {
   border-radius: 5px;
   width: 100%;
   padding: 5px 10px;
   font-size: 16px;
 }
 
-.main-signup .container .main-sec .form form .contact-btn, .main-contact .container .main-sec .form form .contact-btn {
+.main-signup .container .main-sec .form form .contact-btn,
+.main-contact .container .main-sec .form form .contact-btn {
   width: 50%;
   margin-top: 10px;
 }
 
-.main-signup .container .main-sec .form form .contact-btn button, .main-contact .container .main-sec .form form .contact-btn button {
+.main-signup .container .main-sec .form form .contact-btn button,
+.main-contact .container .main-sec .form form .contact-btn button {
   border: none;
   background-color: #4f58da;
   font-size: 24px;
@@ -1090,7 +1106,8 @@ body {
   cursor: pointer;
 }
 
-.main-signup .container .main-sec .form form .contact-btn button:hover, .main-contact .container .main-sec .form form .contact-btn button:hover {
+.main-signup .container .main-sec .form form .contact-btn button:hover,
+.main-contact .container .main-sec .form form .contact-btn button:hover {
   background-color: #829494;
 }
 
@@ -1116,34 +1133,40 @@ body {
   margin: 0 7px;
 }
 
-.main-admin .container .add-post, .main-admin .container .edit-post {
+.main-admin .container .add-post,
+.main-admin .container .edit-post {
   background-color: #dbd8d8;
   border-radius: 12px;
 }
 
-.main-admin .container .add-post .fields, .main-admin .container .edit-post .fields {
+.main-admin .container .add-post .fields,
+.main-admin .container .edit-post .fields {
   border: 1px solid grey;
   border-radius: 12px;
   padding: 0 10px;
 }
 
-.main-admin .container .add-post .fields h1, .main-admin .container .edit-post .fields h1 {
+.main-admin .container .add-post .fields h1,
+.main-admin .container .edit-post .fields h1 {
   font-size: 32px;
   text-align: center;
   text-transform: capitalize;
 }
 
-.main-admin .container .add-post .fields form .content, .main-admin .container .edit-post .fields form .content {
+.main-admin .container .add-post .fields form .content,
+.main-admin .container .edit-post .fields form .content {
   display: block;
 }
 
-.main-admin .container .add-post .fields form .content label, .main-admin .container .edit-post .fields form .content label {
+.main-admin .container .add-post .fields form .content label,
+.main-admin .container .edit-post .fields form .content label {
   font-size: 24px;
   font-weight: normal;
   text-transform: capitalize;
 }
 
-.main-admin .container .add-post .fields form .content input, .main-admin .container .edit-post .fields form .content input {
+.main-admin .container .add-post .fields form .content input,
+.main-admin .container .edit-post .fields form .content input {
   width: 100%;
   font-size: 20px;
   border: 1px solid #3b3b3b;
@@ -1152,37 +1175,44 @@ body {
   padding: 10px;
 }
 
-.main-admin .container .add-post .fields form .body-input, .main-admin .container .edit-post .fields form .body-input {
+.main-admin .container .add-post .fields form .body-input,
+.main-admin .container .edit-post .fields form .body-input {
   width: 100%;
 }
 
-.main-admin .container .add-post .fields form .body-input p, .main-admin .container .edit-post .fields form .body-input p {
+.main-admin .container .add-post .fields form .body-input p,
+.main-admin .container .edit-post .fields form .body-input p {
   font-size: 20px;
   text-transform: capitalize;
   margin: 0;
 }
 
-.main-admin .container .add-post .fields form .body-input textarea, .main-admin .container .edit-post .fields form .body-input textarea {
+.main-admin .container .add-post .fields form .body-input textarea,
+.main-admin .container .edit-post .fields form .body-input textarea {
   width: 100%;
   padding: 10px;
   font-size: 20px;
   border-radius: 7px;
 }
 
-.main-admin .container .add-post .fields form .topic, .main-admin .container .edit-post .fields form .topic {
+.main-admin .container .add-post .fields form .topic,
+.main-admin .container .edit-post .fields form .topic {
   padding: 10px 0;
 }
 
-.main-admin .container .add-post .fields form .topic select, .main-admin .container .edit-post .fields form .topic select {
+.main-admin .container .add-post .fields form .topic select,
+.main-admin .container .edit-post .fields form .topic select {
   text-transform: capitalize;
   font-size: 18px;
 }
 
-.main-admin .container .add-post .fields form .btn, .main-admin .container .edit-post .fields form .btn {
+.main-admin .container .add-post .fields form .btn,
+.main-admin .container .edit-post .fields form .btn {
   margin: 10px 0 0px 0;
 }
 
-.main-admin .container .add-post .fields form .btn button, .main-admin .container .edit-post .fields form .btn button {
+.main-admin .container .add-post .fields form .btn button,
+.main-admin .container .edit-post .fields form .btn button {
   background-color: #487c7c;
   color: #fff;
   font-size: 20px;
@@ -1542,8 +1572,8 @@ body {
   text-transform: capitalize;
   text-decoration: none;
   color: #fff;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 7px;
@@ -1703,7 +1733,7 @@ body {
 }
 
 .main-footer .container .nav-bars .nav .nav-btn a {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   letter-spacing: 1px;
 }
@@ -1733,17 +1763,21 @@ body {
 }
 
 @media screen and (max-width: 375px) and (min-width: 320px) {
-  .nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links, .main-nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links {
+  .nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links,
+  .main-nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links {
     -ms-grid-columns: 80% 20%;
         grid-template-columns: 80% 20%;
   }
-  .nav-header .nav .container .newsletter .title h1, .main-nav-header .nav .container .newsletter .title h1 {
+  .nav-header .nav .container .newsletter .title h1,
+  .main-nav-header .nav .container .newsletter .title h1 {
     font-size: 22px;
   }
-  .nav-header .nav .container .newsletter .input form h3, .main-nav-header .nav .container .newsletter .input form h3 {
+  .nav-header .nav .container .newsletter .input form h3,
+  .main-nav-header .nav .container .newsletter .input form h3 {
     font-size: 16px;
   }
-  .nav-header .nav .container .newsletter .input form input, .main-nav-header .nav .container .newsletter .input form input {
+  .nav-header .nav .container .newsletter .input form input,
+  .main-nav-header .nav .container .newsletter .input form input {
     text-align: center;
     width: 100%;
     border-radius: 0;
@@ -1829,7 +1863,7 @@ body {
   }
   .showdesc-header .recent-posts .title {
     width: 70%;
-    margin: 45px  auto 35px auto;
+    margin: 45px auto 35px auto;
   }
   .showdesc-header .recent-posts .recent-posts-div .images .img {
     height: 340px;
@@ -1852,7 +1886,8 @@ body {
 }
 
 @media all and (max-width: 736px) and (min-width: 637px) {
-  .main-nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links, .nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links {
+  .main-nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links,
+  .nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links {
     -ms-grid-columns: 3fr 4fr;
         grid-template-columns: 3fr 4fr;
   }
@@ -1885,7 +1920,7 @@ body {
   }
   .showdesc-header .recent-posts .title {
     width: 70%;
-    margin: 45px  auto 35px auto;
+    margin: 45px auto 35px auto;
   }
   .showdesc-header .recent-posts .recent-posts-div {
     -ms-grid-columns: (1fr)[2];
@@ -1925,7 +1960,8 @@ body {
 }
 
 @media all and (max-width: 980px) and (min-width: 737px) {
-  .main-nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links, .nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links {
+  .main-nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links,
+  .nav-header .nav .container .main-nav .nav-bars .small-sc-bar .links {
     -ms-grid-columns: 4fr 7fr;
         grid-template-columns: 4fr 7fr;
   }
@@ -1985,7 +2021,7 @@ body {
   }
   .showdesc-header .recent-posts .title {
     width: 70%;
-    margin: 45px  auto 35px auto;
+    margin: 45px auto 35px auto;
   }
   .showdesc-header .recent-posts .recent-posts-div {
     -ms-grid-columns: (1fr)[2];
@@ -2001,7 +2037,8 @@ body {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-  .main-admin .container .add-post, .main-admin .container .edit-post {
+  .main-admin .container .add-post,
+  .main-admin .container .edit-post {
     width: 85%;
     margin: auto;
   }
@@ -2035,38 +2072,47 @@ body {
 }
 
 @media all and (min-width: 980px) {
-  .main-nav-header .nav .container .main-nav, .nav-header .nav .container .main-nav {
+  .main-nav-header .nav .container .main-nav,
+  .nav-header .nav .container .main-nav {
     -ms-grid-columns: 20% 80%;
         grid-template-columns: 20% 80%;
         grid-template-areas: "logo menu";
   }
-  .main-nav-header .nav .container .main-nav .logo, .nav-header .nav .container .main-nav .logo {
+  .main-nav-header .nav .container .main-nav .logo,
+  .nav-header .nav .container .main-nav .logo {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: logo;
   }
-  .main-nav-header .nav .container .main-nav .nav-bars, .nav-header .nav .container .main-nav .nav-bars {
+  .main-nav-header .nav .container .main-nav .nav-bars,
+  .nav-header .nav .container .main-nav .nav-bars {
     text-align: right;
   }
-  .main-nav-header .nav .container .main-nav .nav-bars .hamburger-menu, .nav-header .nav .container .main-nav .nav-bars .hamburger-menu {
+  .main-nav-header .nav .container .main-nav .nav-bars .hamburger-menu,
+  .nav-header .nav .container .main-nav .nav-bars .hamburger-menu {
     display: none;
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: menu;
   }
-  .main-nav-header .nav .container .main-nav .nav-bars .small-sc-bar, .nav-header .nav .container .main-nav .nav-bars .small-sc-bar {
+  .main-nav-header .nav .container .main-nav .nav-bars .small-sc-bar,
+  .nav-header .nav .container .main-nav .nav-bars .small-sc-bar {
     display: none;
   }
-  .main-nav-header .nav .container .main-nav .nav-bars .big-sc-bar, .nav-header .nav .container .main-nav .nav-bars .big-sc-bar {
+  .main-nav-header .nav .container .main-nav .nav-bars .big-sc-bar,
+  .nav-header .nav .container .main-nav .nav-bars .big-sc-bar {
     display: inline-block;
   }
-  .main-nav-header .nav .container .main-nav .nav-bars .big-sc-bar .links .subnav .subnav-content, .nav-header .nav .container .main-nav .nav-bars .big-sc-bar .links .subnav .subnav-content {
+  .main-nav-header .nav .container .main-nav .nav-bars .big-sc-bar .links .subnav .subnav-content,
+  .nav-header .nav .container .main-nav .nav-bars .big-sc-bar .links .subnav .subnav-content {
     text-align: left !important;
   }
-  .main-nav-header .nav .newsletter, .nav-header .nav .newsletter {
+  .main-nav-header .nav .newsletter,
+  .nav-header .nav .newsletter {
     display: none;
   }
-  .main-nav-header .nav .svg, .nav-header .nav .svg {
+  .main-nav-header .nav .svg,
+  .nav-header .nav .svg {
     display: none;
   }
   .home-header .container {
@@ -2247,7 +2293,7 @@ body {
   }
   .showdesc-header .main-sec-container .recent-posts .title {
     width: 70%;
-    margin: 45px  auto 35px auto;
+    margin: 45px auto 35px auto;
   }
   .showdesc-header .main-sec-container .recent-posts .recent-posts-div {
     -ms-grid-columns: (1fr)[3];
@@ -2392,7 +2438,8 @@ body {
     -ms-grid-column: 2;
     grid-area: main;
   }
-  .split-aside .main-admin .container .add-post, .split-aside .main-admin .container .edit-post {
+  .split-aside .main-admin .container .add-post,
+  .split-aside .main-admin .container .edit-post {
     width: 85%;
     margin: auto;
   }
@@ -2571,7 +2618,7 @@ body {
   }
   .showdesc-header .main-sec-container .recent-posts .title {
     width: 70%;
-    margin: 45px  auto 35px auto;
+    margin: 45px auto 35px auto;
   }
   .showdesc-header .main-sec-container .recent-posts .recent-posts-div {
     -ms-grid-columns: (1fr)[3];
@@ -2769,7 +2816,8 @@ body {
     -ms-grid-column: 2;
     grid-area: main;
   }
-  .split-aside .main-admin .container .add-post, .split-aside .main-admin .container .edit-post {
+  .split-aside .main-admin .container .add-post,
+  .split-aside .main-admin .container .edit-post {
     width: 85%;
     margin: auto;
   }
