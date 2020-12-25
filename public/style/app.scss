@@ -102,6 +102,7 @@ body {
                       padding-bottom: 10px;
                     }
                   }
+
                   .subnav-content {
                     overflow: hidden;
                     display: none;
@@ -164,6 +165,11 @@ body {
                     &:hover {
                       color: rgb(8, 30, 43);
                     }
+                  }
+                }
+                .logout {
+                  a {
+                    color: rgb(248, 132, 132) !important;
                   }
                 }
                 &:hover .subnav-content {

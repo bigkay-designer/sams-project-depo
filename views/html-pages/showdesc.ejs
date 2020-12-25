@@ -52,6 +52,7 @@
                     <div class="recent-posts-div">
                         <% if(posts){%>
                             <% posts.forEach(post=>{ %>
+                                <% if (post.title || post.image || post.body){ %>
                                     <div class="images">
                                         <div class="img">
                                             <img src="<%= post.image%>" alt="">
@@ -69,9 +70,10 @@
                                             <a href="/readmore/<%= post._id%>">read more</a>
                                         </div>
                                     </div>
-                                <% }) %> 
-                            <% } %> 
-                        </div>
+                                <% } %> 
+                            <% }) %> 
+                        <% } %> 
+                    </div>
                 </div>
             </section>
         </div>
@@ -83,23 +85,25 @@
                 <div class="posts-div">
                     <% if(posts){%>
                         <% posts.forEach(post=>{ %>
-                            <div class="images">
-                                <div class="img">
-                                    <img src="<%= post.image%>" alt="">
+                            <% if (post.title || post.image || post.body){ %>
+                                <div class="images">
+                                    <div class="img">
+                                        <img src="<%= post.image%>" alt="">
+                                    </div>
+                                    <div class="name">
+                                        <p><%= post.name%></p>
+                                    </div>
+                                    <div class="topic">
+                                        <p><%= post.topic%></p>
+                                    </div>
+                                    <div class="body">
+                                        <p><%- post.body.substring(0, 100)%></p>
+                                    </div>
+                                    <div class="readmore">
+                                        <a href="/readmore/<%= post._id%>">read more</a>
+                                    </div>
                                 </div>
-                                <div class="name">
-                                    <p><%= post.name%></p>
-                                </div>
-                                <div class="topic">
-                                    <p><%= post.topic%></p>
-                                </div>
-                                <div class="body">
-                                    <p><%- post.body.substring(0, 100)%></p>
-                                </div>
-                                <div class="readmore">
-                                    <a href="/readmore/<%= post._id%>">read more</a>
-                                </div>
-                            </div>
+                            <% } %> 
                         <% }) %> 
                     <% } %> 
                 </div>

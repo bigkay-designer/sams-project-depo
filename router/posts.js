@@ -15,6 +15,7 @@ router.get('/', (req, res) => {
     posts.find().sort(idc).limit(6).exec((err, mainpost)=>{
         if(err){
             log(err)
+            
         }else{
             posts.find().sort({'_id': -1}).limit(3).exec((err, post)=>{
                 if(err){
@@ -33,20 +34,35 @@ router.get('/', (req, res) => {
 /// show desc
 router.get('/readmore/:id', (req, res) => {
     posts.find().sort({'_id': -1}).limit(6).exec((err, post)=>{
-            if(err){
-                log(err)
-            }else{
-                
-                posts.findById(req.params.id, (err, foundPost)=>{
-                    if(err){
-                        log(err)
+        if(err){
+            log(err)
+        }else{
+            post.map(eachPost=>{
+                if(eachPost.title === undefined || eachPost.title === ''){
+                    console.log(eachPost.id)
+                    posts.findByIdAndDelete(eachPost.id, (err, deletedPost)=>{
+                        if (err){
+                            console.log(err)
+                        }else{
+                            console.log(deletedPost)
+                        }
+                    })
+                }
+            })
+            posts.findById(req.params.id, (err, foundPost)=>{
+                if(err){
+                    log(err)
+                }else{
+                    if(!foundPost){
+                        req.flash('error', `sorry this post don't exist anymore`)
+                        res.redirect('back')
                     }else{
-                        if(foundPost.topic == 'animals' || foundPost.topic == 'environment' || foundPost.topic == 'physics' || foundPost.topic == 'body & health'){
+                        if(foundPost.topic === 'animals' || foundPost.topic === 'environment' || foundPost.topic === 'physics' || foundPost.topic === 'body & health'){
                             res.render('./html-pages/showdesc', {
                                 foundPost: foundPost, 
                                 posts: post,
                                 topicLink: 'science&nature'
-    
+
                             })
                         }else if(foundPost.topic == 'historic events' || foundPost.topic == 'people & civilization'){
                             res.render('./html-pages/showdesc', {
@@ -63,9 +79,10 @@ router.get('/readmore/:id', (req, res) => {
                             })
                         }
                     }
-                })
-            }
-        })
+                }
+            })
+        }
+    })
 })
 
 router.
@@ -97,10 +114,15 @@ route('/science&nature/:id')
         if(err){
             log(err)
         }else{
-            res.render('./topics/scienceandnature', {
-                posts: posts,
-                title: req.params.id
-            })
+            if(posts == ''){
+                req.flash('error', 'sorry this link is currently empty. will be posting content here soon')
+                return res.redirect('back')
+            }else{
+                res.render('./topics/scienceandnature', {
+                    posts: posts,
+                    title: req.params.id
+                })
+            }
         }
     })
 })
@@ -158,10 +180,15 @@ route('/history/:id')
         if(err){
             log(err)
         }else{
-            res.render('./topics/history', {
-                posts: posts,
-                title: req.params.id
-            })
+            if(posts == ''){
+                req.flash('error', 'sorry this link is currently empty. will be posting content here soon')
+                return res.redirect('back')
+            }else{
+                res.render('./topics/history', {
+                    posts: posts,
+                    title: req.params.id
+                })
+            }
         }
     })
 })

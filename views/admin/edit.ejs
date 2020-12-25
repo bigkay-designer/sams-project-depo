@@ -8,18 +8,18 @@
                         <form action="/readmore/<%= post._id%>?_method=PUT" method="POST">
                             <div class="content">
                                 <label for="title">title</label>
-                                <input type="text" name="title" value="<%= post.title%>" required>
+                                <input type="text" name="title" value="<%= post.title%>" >
                             </div>
                             <div class="content">
                                 <label for="image">image</label>
-                                <input type="text" name="image" value="<%= post.image%>" required>
+                                <input type="text" name="image" value="<%= post.image%>" >
                             </div>
                             <div class="body-input">
                                 <p>body</p>
-                                <textarea name="body" id="body" required><%= post.body%></textarea>
+                                <textarea name="body" id="body"><%= post.body%></textarea>
                             </div>
                             <div class="topic">
-                                <select name="topic" id="topic" required>
+                                <select name="topic" id="topic" >
                                     <option value="">none</option>
                                     <optgroup class="optgroup" label="entertainment">
                                         <option value="funfacts">funfacts</option>

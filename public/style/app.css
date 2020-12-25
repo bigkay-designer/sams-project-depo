@@ -205,6 +205,10 @@ body {
   color: #081e2b;
 }
 
+.nav-header .nav .container .main-nav .nav-bars .big-sc-bar .links .subnav .logout a {
+  color: #f88484 !important;
+}
+
 .nav-header .nav .container .main-nav .nav-bars .big-sc-bar .links .subnav:hover .subnav-content {
   display: block;
 }
