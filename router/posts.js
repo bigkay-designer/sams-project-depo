@@ -199,4 +199,10 @@ route('/contact')
 .get((req, res)=>{
     res.render('./html-pages/contact')
 })
+
+// newsletter
+router.route('/newsletter').post((req, res)=>{
+    req.flash('success', 'Thanks for joining our newsletter.')
+    res.redirect('/')
+})
 module.exports = router

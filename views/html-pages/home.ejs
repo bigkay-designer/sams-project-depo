@@ -23,7 +23,7 @@
                                         <p><%= post.topic%></p>
                                     </div>
                                     <div class="body">
-                                        <p><%- post.body.substring(0, 250)%></p>
+                                        <p><%- post.body.substring(0, 100)%></p>
                                     </div>
                                     <div class="readmore readmore-showcase">
                                         <a href="readmore/<%= post._id%>">read more</a>
@@ -56,7 +56,7 @@
                                         <p><%= post.topic%></p>
                                     </div>
                                     <div class="body">
-                                        <p><%- post.body.substring(0, 150)%></p>
+                                        <p><%- post.body.substring(0, 50)%></p>
                                     </div>
                                     <div class="readmore">
                                         <a href="/readmore/<%= post._id%>">read more</a>
@@ -75,7 +75,7 @@
                     <h1>Lorem ipsum dolor sit amet.</h1>
                 </div>
                 <div class="input">
-                    <form action="#">
+                    <form action="/newsletter" method="POST">
                         <h3 for="newsletter">signup for our free newsletter</h3>
                         <input type="email" name="newsletter" placeholder="Enter your email address" required>
                         <input type="submit"></input>

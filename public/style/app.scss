@@ -443,6 +443,29 @@ body {
     }
   }
 }
+
+// Flash message 
+.message-container {
+  width: 85%;
+  margin: 10px auto;
+  .success {
+    background-color: rgb(69, 216, 69);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 20px;
+    color: rgb(26, 90, 17);
+    margin: 10px 0;
+  }
+  .danger {
+    background-color: rgb(228, 96, 96);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px 20px;
+    color: rgb(66, 22, 24);
+  }
+}
 //admin-nav
 .admin-nav-header {
   .nav {
@@ -715,11 +738,12 @@ body {
               padding: 5px 10px;
               color: #fff;
               border-radius: 7px;
-              width: auto;
               margin: 10px 0;
             }
           }
           .body {
+            height: 80px;
+            // padding: 10px 0 30px;
             p {
               font-size: 20px;
               padding: 0 10px;
@@ -2642,7 +2666,7 @@ body {
             margin: auto;
             .images {
               .img {
-                height: 400px;
+                max-height: 400px !important;
                 img {
                   height: 100%;
                 }

@@ -523,6 +523,30 @@ body {
   display: block;
 }
 
+.message-container {
+  width: 85%;
+  margin: 10px auto;
+}
+
+.message-container .success {
+  background-color: #45d845;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 10px 20px;
+  color: #1a5a11;
+  margin: 10px 0;
+}
+
+.message-container .danger {
+  background-color: #e46060;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  padding: 10px 20px;
+  color: #421618;
+}
+
 .admin-nav-header .nav {
   background: #0099ff;
 }
@@ -843,8 +867,11 @@ body {
   padding: 5px 10px;
   color: #fff;
   border-radius: 7px;
-  width: auto;
   margin: 10px 0;
+}
+
+.home-header .container .showcase .slide-show .images .body {
+  height: 80px;
 }
 
 .home-header .container .showcase .slide-show .images .body p {
@@ -2526,7 +2553,7 @@ body {
     margin: auto;
   }
   .home-header .container .main-sec .showcase .slide-show .images .img {
-    height: 400px;
+    max-height: 400px !important;
   }
   .home-header .container .main-sec .showcase .slide-show .images .img img {
     height: 100%;
