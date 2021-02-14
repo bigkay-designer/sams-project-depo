@@ -1564,7 +1564,10 @@ body {
 }
 
 .subnav-header .container .posts .header .title {
-  margin: 10px 20px 35px 20px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto !important;
 }
 
 .subnav-header .container .posts .header .title h1 {
@@ -1573,10 +1576,10 @@ body {
   text-transform: capitalize;
   background: -webkit-gradient(linear, left top, right top, from(#5550eb), to(#00ff88));
   background: linear-gradient(90deg, #5550eb 0%, #00ff88 100%);
-  padding: 5px 0;
+  padding: 10px 40px;
   border-radius: 21px;
   color: #fff;
-  margin: 5px 25px;
+  margin: 10px 20px 35px 20px;
 }
 
 .subnav-header .container .posts .header .title hr {
@@ -1778,6 +1781,11 @@ body {
   background-color: #f84747;
   border-radius: 7px;
   padding-left: 15px;
+}
+
+.main-footer .copyright a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .main-footer .copyright p {
@@ -2228,9 +2236,12 @@ body {
   .home-header .container .aside .posts .posts-div {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    overflow-x: scroll;
+    height: 100vh;
+    width: 100%;
   }
   .home-header .container .aside .posts .posts-div .images {
-    width: 75%;
+    width: 90%;
     margin: auto;
     border: 1px solid grey;
     border-radius: 7px;
@@ -2591,8 +2602,7 @@ body {
     width: 75%;
   }
   .home-header .container .aside .posts .posts-div .images {
-    width: 65%;
-    margin: 0;
+    margin: 0 auto;
   }
   .home-header .container .aside .posts .posts-div .images .img {
     height: 200px;

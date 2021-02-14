@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
             log(err)
             
         }else{
-            posts.find().sort({'_id': -1}).limit(3).exec((err, post)=>{
+            posts.find().sort({'_id': -1}).exec((err, post)=>{
                 if(err){
                     log(err)
                 }else{

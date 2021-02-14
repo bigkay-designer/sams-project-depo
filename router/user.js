@@ -4,10 +4,12 @@ let express = require('express'),
     passport = require('passport'),
     async = require('async')
 
+let middleware = require('../middleware/index');
+
 let user = require('../models/user')
 const { route } = require('./posts')
 
-router.get('/signup', (req, res) => {
+router.get('/signup', middleware.isLoggedIn, (req, res) => {
     res.render('./admin/signup')
 })
 

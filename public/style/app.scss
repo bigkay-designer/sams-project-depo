@@ -1364,17 +1364,18 @@ body {
     .posts {
       .header {
         .title {
-          margin: 10px 20px 35px 20px;
+          max-width: fit-content;
+          margin: 0 auto !important;
           h1 {
             font-size: 26px;
             text-align: center;
             text-transform: capitalize;
             background: linear-gradient(90deg, #5550eb 0%, #00ff88 100%);
-            padding: 5px 0;
+            padding:10px 40px;
             border-radius: 21px;
             color: #fff;
-            margin: 5px 25px;
-          }
+            margin: 10px 20px 35px 20px;
+        }
           hr {
             border: 1px solid rgb(5, 37, 5);
             border-radius: 50%;
@@ -1570,6 +1571,10 @@ body {
     }
   }
   .copyright {
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
     p {
       text-align: center;
       border: 1px solid #2a4747;
@@ -2288,9 +2293,11 @@ body {
           }
           .posts-div {
             grid-template-columns: repeat(1, 1fr);
-
+            overflow-x: scroll;
+            height: 100vh;
+            width: 100%;
             .images {
-              width: 75%;
+              width: 90%;
               margin: auto;
               border: 1px solid grey;
               border-radius: 7px;
@@ -2431,7 +2438,6 @@ body {
         }
         .posts-div {
           grid-template-columns: repeat(1, 1fr);
-
           .images {
             width: 75%;
             margin: auto;
@@ -2712,8 +2718,7 @@ body {
             padding: 10px;
             width: 75%;
             .images {
-              width: 65%;
-              margin: 0;
+              margin: 0 auto;
               .img {
                 height: 200px;
                 img {
